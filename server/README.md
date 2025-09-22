@@ -33,23 +33,28 @@ A RESTful API for a blog application built with Node.js, Express.js, and MongoDB
 
 1. Clone the repository
 ```bash
-git clone <https://github.com/filsammy/blog-application.git>
-cd blog-application-api
+git clone <repository-url>
+cd blog-application
 ```
 
-2. Install dependencies
+2. Navigate to the server directory
+```bash
+cd server
+```
+
+3. Install dependencies
 ```bash
 npm install
 ```
 
-3. Create a `.env` file in the root directory with the following variables:
+4. Create a `.env` file in the server directory with the following variables:
 ```env
 MONGODB_STRING=your_mongodb_connection_string
 JWT_SECRET_KEY=your_jwt_secret_key
 PORT=3000
 ```
 
-4. Start the server
+5. Start the server
 ```bash
 node index.js
 ```
@@ -197,21 +202,30 @@ Content-Type: application/json
 ## Project Structure
 
 ```
-├── controllers/
-│   ├── user.js
-│   ├── post.js
-│   └── comment.js
-├── models/
-│   ├── User.js
-│   ├── Post.js
-│   └── Comment.js
-├── routes/
-│   ├── user.js
-│   ├── post.js
-│   └── comment.js
-├── auth.js
-├── errorHandler.js
-├── index.js
+blog-application/
+├── client/
+│   └── (client-side code)
+├── server/
+│   ├── controllers/
+│   │   ├── user.js
+│   │   ├── post.js
+│   │   └── comment.js
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Post.js
+│   │   └── Comment.js
+│   ├── routes/
+│   │   ├── user.js
+│   │   ├── post.js
+│   │   └── comment.js
+│   ├── node_modules/
+│   ├── auth.js
+│   ├── errorHandler.js
+│   ├── index.js
+│   ├── .env
+│   ├── package.json
+│   ├── package-lock.json
+│   └── README.md
 └── README.md
 ```
 
