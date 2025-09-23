@@ -40,7 +40,7 @@ A full-stack blog application built with React.js frontend and Node.js/Express b
 - **cors** - Cross-origin resource sharing
 - **dotenv** - Environment variables
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before running this application, make sure you have:
 
@@ -49,7 +49,7 @@ Before running this application, make sure you have:
 - **MongoDB Atlas** account or local MongoDB installation
 - **Git** for version control
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the Repository
 ```bash
@@ -227,7 +227,7 @@ node index.js      # Alternative start command
 REACT_APP_API_URL=http://localhost:4000
 
 # For production (set in Vercel dashboard)
-REACT_APP_API_URL=https://your-render-backend-url.onrender.com
+REACT_APP_API_URL=https://blog-application-api-yu5u.onrender.com
 ```
 
 ### Backend (.env in server directory)
@@ -269,7 +269,7 @@ NODE_ENV=production
    - **Output Directory**: `build`
 5. Add environment variables in Vercel dashboard:
    ```
-   REACT_APP_API_URL=https://your-render-backend-url.onrender.com
+   REACT_APP_API_URL=https://blog-application-api-yu5u.onrender.com (for now URL is hardcoded in services/api.js for DEMO purposes)
    ```
 6. Deploy! Vercel will auto-deploy on every push to main branch
 
@@ -320,33 +320,16 @@ After deploying to Render, update your frontend API configuration:
 ```javascript
 // src/services/api.js
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || "https://your-app-name.onrender.com",
+  baseURL: process.env.REACT_APP_API_URL || "https://blog-application-api-yu5u.onrender.com",
   headers: {
     "Content-Type": "application/json",
   },
 });
 ```
 
-#### CORS Configuration (Backend)
-Make sure your backend allows requests from your Vercel domain:
-
-```javascript
-// In your server index.js or where CORS is configured
-const cors = require('cors');
-
-app.use(cors({
-  origin: [
-    'http://localhost:3000', // for development
-    'https://your-vercel-app.vercel.app', // your Vercel URL
-    'https://your-custom-domain.com' // if you have a custom domain
-  ],
-  credentials: true
-}));
-```
-
 ### Live URLs
-- **Frontend (Vercel)**: `https://your-app-name.vercel.app`
-- **Backend (Render)**: `https://your-app-name.onrender.com`
+- **Frontend (Vercel)**: `https://blog-application-react-two.vercel.app/`
+- **Backend (Render)**: `https://blog-application-api-yu5u.onrender.com`
 
 ### Important Notes
 - **Render Free Tier**: Backend may sleep after 15 minutes of inactivity (first request may be slow)
