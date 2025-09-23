@@ -27,17 +27,23 @@ function Blog() {
   if (loading) return <LoadingState />;
 
   return (
-    <div className="row">
-      {blogs.length === 0 ? (
-        <p>No blogs yet. Be the first to post!</p>
-      ) : (
-        blogs.map((blog) => (
-          <div key={blog._id} className="col-md-4 mb-3">
-            <BlogCard blog={blog} />
-          </div>
-        ))
-      )}
-    </div>
+    <>
+      <div className="row">
+        {blogs.length === 0 ? (
+          <p>No blogs yet. Be the first to post!</p>
+        ) : (
+          blogs.map((blog) => (
+            <div key={blog._id} className="col-md-4 mb-3">
+              <BlogCard blog={blog} />
+            </div>
+          ))
+        )}
+      </div>
+
+      <div className="text-center mt-5 text-light">
+        <p>Podcasts, video stories and more coming soon...</p>
+      </div>
+    </>
   );
 }
 

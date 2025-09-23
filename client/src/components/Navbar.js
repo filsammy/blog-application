@@ -17,7 +17,7 @@ function Navbar() {
   return (
     <BsNavbar bg="dark" variant="dark" expand="lg" sticky="top">
       <Container>
-        <BsNavbar.Brand as={Link} to="/">BlogApp</BsNavbar.Brand>
+        <BsNavbar.Brand as={Link} to="/">Spookify</BsNavbar.Brand>
         <BsNavbar.Toggle aria-controls="navbar-nav" />
         <BsNavbar.Collapse id="navbar-nav">
           <Nav className="me-auto">
