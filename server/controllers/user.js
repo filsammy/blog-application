@@ -67,13 +67,18 @@ module.exports.loginUser = async (req, res) => {
       return res.status(401).json({ message: "Incorrect email or password" });
     }
 
+    // generate JWT
     const accessToken = auth.createAccessToken(user);
 
+    // send clean response
     return res.status(200).json({
-      access: accessToken,
-      isAdmin: user.isAdmin,
-      userId: user._id,
-      name: user.name
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+        isAdmin: user.isAdmin
+      },
+      accessToken
     });
   } catch (error) {
     return errorHandler(error, req, res);

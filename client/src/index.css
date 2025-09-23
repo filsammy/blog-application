@@ -1,0 +1,245 @@
+body {
+  font-family: 'Special Elite', monospace;
+  background: url("https://wallpapercave.com/wp/ppwqXGK.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #f5f5f5;
+  /* light text for readability */
+  font-size: 1.1rem;
+  /* increase base font size */
+  line-height: 1.8;
+  /* more spacing between lines */
+}
+
+.content {
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+  /* tighter for headings */
+  margin-bottom: 1rem;
+  color: #ff5555;
+  /* reddish headings for gothic vibe */
+}
+
+.card-title {
+  font-family: 'Special Elite', monospace;
+  /* typewriter/gothic */
+  color: #ff5555;
+  /* blood-red */
+  font-size: 1.5rem;
+  /* bigger font */
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* dark overlay */
+  z-index: -1;
+}
+
+/* Gothic horror-style button/link */
+/* Universal horror button override for Bootstrap buttons */
+.btn-horror {
+  font-family: 'Special Elite', monospace;
+  background-color: #111 !important;
+  /* dark base */
+  color: #c62828 !important;
+  /* blood red text */
+  border: 2px solid #4a0404 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 0 8px #4a0404, 0 0 15px #000 inset !important;
+  transition: all 0.3s ease;
+}
+
+/* Hover and focus */
+.btn-horror:hover,
+.btn-horror:focus {
+  background-color: #4a0404 !important;
+  /* dark red glow */
+  color: #f44336 !important;
+  box-shadow: 0 0 12px #8b0000, 0 0 25px #4a0404 inset !important;
+  transform: scale(1.05);
+}
+
+/* Active tab override */
+.btn-horror.active,
+.btn-horror:active {
+  background-color: #4a0404 !important;
+  /* keep gothic red */
+  color: #fff !important;
+  /* white text for contrast */
+  box-shadow: 0 0 12px #8b0000, 0 0 25px #4a0404 inset !important;
+  transform: scale(1.05);
+  border-color: #ff1744 !important;
+  /* optional glowing border */
+}
+
+
+/* Universal Gothic/Horror Button */
+.btn-horror-universal {
+  font-family: 'Special Elite', monospace;
+  /* typewriter vibe */
+  background-color: #111111;
+  /* deep black */
+  color: #c62828;
+  /* blood-red text */
+  border: 2px solid #4a0404;
+  /* dark red border */
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  /* for links */
+  display: inline-block;
+  /* works for button & link */
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px #4a0404, 0 0 15px #000 inset;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Hover effect */
+.btn-horror-universal:hover {
+  background-color: #4a0404;
+  /* dark red glow */
+  color: #f44336;
+  /* brighter red */
+  box-shadow: 0 0 12px #8b0000, 0 0 25px #4a0404 inset;
+  transform: scale(1.05);
+}
+
+.btn-horror-universal.active,
+.btn-horror-universal:active {
+  background-color: #4a0404 !important;
+  /* keep gothic red */
+  color: #fff !important;
+  /* white text for contrast */
+  box-shadow: 0 0 12px #8b0000, 0 0 25px #4a0404 inset !important;
+  transform: scale(1.05);
+  border-color: #ff1744 !important;
+  /* optional glowing border */
+}
+
+/* Navbar container */
+.navbar {
+  background-color: #111111;
+  /* deep black */
+  padding: 10px 20px;
+  /* adjust padding to taste */
+  margin: 0;
+  /* remove default margins */
+  width: 100%;
+  /* full width */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px #000 inset;
+  font-family: 'Special Elite', monospace;
+  box-sizing: border-box;
+  /* include padding in width */
+}
+
+
+/* Navbar links */
+.navbar a {
+  color: #c62828;
+  /* blood red */
+  text-decoration: none;
+  margin: 0 10px;
+  /* smaller side spacing */
+  padding: 5px 10px;
+  /* optional padding for click area */
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+
+/* Hover effect for links */
+.navbar a:hover {
+  color: #f44336;
+  /* brighter red on hover */
+  text-shadow: 0 0 8px #f44336, 0 0 15px #8b0000;
+  transform: scale(1.05);
+}
+
+/* Optional: active page indicator */
+.navbar a.active {
+  color: #ff1744;
+  text-shadow: 0 0 10px #ff1744;
+}
+
+/* Gothic/Horror Form */
+.form-control {
+  background-color: #1a1a1a;
+  /* dark gray background */
+  color: #f5f5f5;
+  /* light text for readability */
+  border: 2px solid #8b0000;
+  /* deep red border */
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-family: 'Special Elite', monospace;
+  /* match your theme */
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover & focus effect */
+.form-control:focus {
+  background-color: #2a0a0a;
+  /* slightly darker red tint on focus */
+  border-color: #ff1744;
+  /* glowing red border on focus */
+  color: #fff;
+  outline: none;
+  box-shadow: 0 0 8px #ff1744;
+}
+
+/* Optional placeholder styling */
+.form-control::placeholder {
+  color: #bbb;
+  font-style: italic;
+}
+
+/* Universal gothic card style */
+.card-gothic {
+  background-color: #1a1a1a !important;
+  /* dark gray/black */
+  color: #f5f5f5 !important;
+  /* light text */
+  border: 2px solid #4a0404;
+  /* deep red border */
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000 inset, 0 0 8px #4a0404;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for cards */
+.card-gothic:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #8b0000, 0 0 15px #4a0404 inset;
+}
+
+/* Optional: card footer style */
+.card-gothic .card-footer {
+  background-color: #111111;
+  /* slightly darker footer */
+  border-top: 1px solid #4a0404;
+  color: #f5f5f5;
+}

@@ -22,6 +22,15 @@ exports.createComment = async (req, res) => {
   }
 };
 
+exports.getAllComments = async (req, res) => {
+  try {
+    const comments = await Comment.find().sort({ createdAt: -1 });
+    return res.status(200).json(comments);
+  } catch (error) {
+    errorHandler(error, req, res);
+  }
+};
+
 // Get all comments for a specific post
 exports.getCommentsByPost = async (req, res) => {
   try {
