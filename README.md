@@ -1,5 +1,7 @@
 # Blog Application
 
+https://course-booking-app-steel.vercel.app/
+
 A full-stack blog application built with React.js frontend and Node.js/Express backend. This application allows users to create, read, update, and delete blog posts with a complete comment system and user authentication.
 
 ## Features
@@ -254,7 +256,7 @@ NODE_ENV=production
 ```
 *Note: PORT is automatically set by Render*
 
-## 🚀 Deployment
+## Deployment
 
 ### Frontend Deployment (Vercel)
 
