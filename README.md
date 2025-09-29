@@ -235,18 +235,9 @@ REACT_APP_API_URL=https://blog-application-api-yu5u.onrender.com
 ### Backend (.env in server directory)
 ```env
 PORT=4000
-MONGODB_STRING=mongodb+srv://filsammy:admin123@wdc028-course-booking.rj5d7oq.mongodb.net/blog-post-app?retryWrites=true&w=majority&appName=WDC028-Course-Booking
+MONGODB_STRING="your-mongodb-connection-string"
 JWT_SECRET_KEY=blog-post-API
 ```
-
-### Render Environment Variables
-When deploying to Render, set these in the dashboard:
-```env
-MONGODB_STRING=mongodb+srv://username:password@cluster.mongodb.net/blogdb
-JWT_SECRET_KEY=your-production-jwt-secret-key
-NODE_ENV=production
-```
-*Note: PORT is automatically set by Render*
 
 ## Deployment
 
@@ -298,10 +289,9 @@ vercel
 
 6. Add Environment Variables in Render dashboard:
    ```
-   MONGODB_STRING=mongodb+srv://username:password@cluster.mongodb.net/blogdb
-   JWT_SECRET_KEY=your-super-secure-jwt-secret-key-for-production
-   PORT=10000
-   NODE_ENV=production
+   PORT=4000
+   MONGODB_STRING="your-mongodb-connection-string"
+   JWT_SECRET_KEY=blog-post-API
    ```
 
 7. Deploy! Render will build and deploy your backend
