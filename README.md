@@ -1,6 +1,6 @@
 # Blog Application
 
-https://course-booking-app-steel.vercel.app/
+https://blog-application-react-two.vercel.app/
 
 A full-stack blog application built with React.js frontend and Node.js/Express backend. This application allows users to create, read, update, and delete blog posts with a complete comment system and user authentication.
 
@@ -30,7 +30,7 @@ A full-stack blog application built with React.js frontend and Node.js/Express b
 - **React Router DOM** - Client-side routing
 - **React Bootstrap** - UI components
 - **Axios** - HTTP client
-- **React Toastify** - Notifications
+- **Notyf** - Notifications
 
 ### Backend
 - **Node.js** - Runtime environment
