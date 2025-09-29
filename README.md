@@ -223,7 +223,7 @@ node index.js      # Alternative start command
 
 ## Environment Variables
 
-### Frontend (.env in client directory)
+### Frontend (.env in client directory, hardcoded in the meantime for DEMO purposes)
 ```env
 # For local development
 REACT_APP_API_URL=http://localhost:4000
@@ -234,17 +234,9 @@ REACT_APP_API_URL=https://blog-application-api-yu5u.onrender.com
 
 ### Backend (.env in server directory)
 ```env
-# Database connection
-MONGODB_STRING=mongodb+srv://username:password@cluster.mongodb.net/blogdb
-
-# JWT secret (use a strong, unique key for production)
-JWT_SECRET_KEY=your-super-secure-jwt-secret-key
-
-# Port (Render uses PORT environment variable automatically)
 PORT=4000
-
-# Environment
-NODE_ENV=development
+MONGODB_STRING=mongodb+srv://filsammy:admin123@wdc028-course-booking.rj5d7oq.mongodb.net/blog-post-app?retryWrites=true&w=majority&appName=WDC028-Course-Booking
+JWT_SECRET_KEY=blog-post-API
 ```
 
 ### Render Environment Variables
